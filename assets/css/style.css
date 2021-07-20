@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+/* ==================
+Basic Setup
+================= */
 *,
 ::after,
 ::before{
@@ -11,7 +14,7 @@ body{
     line-height: 1.8;
     letter-spacing: 1px;
     font-style: normal;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans 400';;
 }
 html{
     scroll-behavior: smooth;
@@ -38,4 +41,88 @@ button{
 h1,h2,h3,h4,h5,h6,p,ol,ul{
     margin: 0;
     padding: 0;
+}
+
+
+
+/* =================
+  Font Color
+================= */
+.text-color-ff{
+    color: #fff;
+}
+.text-color-ff{
+    color: #333;
+}
+.text-color-ff{
+    color: #72b21a;
+}
+.text-color-ff{
+    color: #fff;
+}
+.text-color-66{
+    color: #666;
+}
+.text-color-97{
+    color: #979797;
+}
+.text-color-ff{
+    color: #fff;
+}
+.text-color-ff{
+    color: #fff;
+}
+/* =================
+  font size
+================= */
+.font-size-55{
+    font-size: 55px;
+}
+.font-size-35{
+    font-size: 35px;
+}
+.font-size-27{
+    font-size: 27px;
+}
+.font-size-24{
+    font-size: 24px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-18{
+    font-size: 18px;
+}
+.font-size-17{
+    font-size: 17px;
+}
+.font-size-15{
+    font-size: 15px;
+}
+.font-size-14{
+    font-size: 14px;
+}
+
+
+
+
+
+
+/* =================
+  backgroind Color
+================= */
+.bg-color-73{
+    background-color:#73b21a ;
+}
+.bg-color-ff{
+    background-color: #fff;
+}
+.bg-color-{
+    background-color: #000;
+}
+.bg-color-4b{
+    background-color:#4b7017 ;
+}
+.bg-color-40{
+    background-color: #406E00;
 }
