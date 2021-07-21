@@ -23,7 +23,7 @@ html{
 ul,li{
     list-style: none;
 }
-a,span{
+a,span,label{
     display: inline-block;
 }
 a,
