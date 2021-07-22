@@ -163,6 +163,7 @@ garden  section start
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
+    min-height: 250px;
 }
 .garden-box:hover{
     background:#73b21a
