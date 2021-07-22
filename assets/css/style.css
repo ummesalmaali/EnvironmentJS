@@ -45,13 +45,83 @@ h1,h2,h3,h4,h5,h6,p,ol,ul{
 
 
 
+/* ======================
+  Reusable Component
+=====================*/
+.line-1, .line-2{
+    border: 0;
+    border-bottom: 3px solid #73b21a;
+    opacity: 1;
+    margin: auto;
+    
+
+    
+}
+.line-1{
+width: 120px;
+margin-bottom: 4px;
+}
+.line-2{
+    width: 75px;
+}
+.p-width{
+    max-width: 700px;
+}
+.btn-primary{
+    min-width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background: #73b21a;
+    text-align: center;
+    border-radius: 30px;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: all .3s ease;
+}
+.btn-primary:hover{
+    background: #4b7017;
+}
+.signin-signup li:last-child a{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.header-top{
+    padding: 6px 0;
+}
+.main-menu ul li:last-of-type a{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+
+}
+.main-menu ul li:not(:last-of-type) a:hover{
+    color: #73b21a;
+}
+/* <!-- ===============================
+start hero section
+=============================== --> */
+.hero-section{
+    background: url(/assets/images/banner1.jpg);
+}
+
+
+
+
+
+
+
 /* =================
   Font Color
 ================= */
 .text-color-ff{
     color: #fff;
 }
-.text-color-ff{
+.text-color-33{
     color: #333;
 }
 .text-color-ff{
