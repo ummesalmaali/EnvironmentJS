@@ -43,143 +43,6 @@ h1,h2,h3,h4,h5,h6,p,ol,ul{
     padding: 0;
 }
 
-
-
-/* ======================
-  Reusable Component
-=====================*/
-.line-1, .line-2{
-    border: 0;
-    border-bottom: 2px solid #73b21a;
-    opacity: 1;
-    margin: auto;
-    
-
-    
-}
-.line-1{
-width: 120px;
-margin-bottom: 4px;
-}
-.line-2{
-    width: 75px;
-}
-.p-width{
-    max-width: 700px;
-}
-.btn-primary{
-    min-width: 150px;
-    height: 40px;
-    line-height: 40px;
-    background: #73b21a;
-    text-align: center;
-    border-radius: 30px;
-    transition: .3s ease;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -ms-transition: .3s ease;
-    -o-transition: all .3s ease;
-}
-.btn-primary:hover{
-    background: #4b7017;
-}
-/* <!-- ===============================
-start header section
-=============================== --> */
-
-.signin-signup li:last-child a{
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.header-top{
-    padding: 6px 0;
-}
-.main-menu ul li:last-of-type a{
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-
-}
-.main-menu ul li:not(:last-of-type) a:hover{
-    color: #73b21a;
-}
-/* <!-- ===============================
-End header section
-=============================== --> */
-
-
-/* <!-- ===============================
-start hero section
-=============================== --> */
-.hero-section{
-    background:linear-gradient(rgba(51, 57, 69, 0.7), rgba(96,131,48,0.7)),  url(/assets/images/banner1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.hero-text a{
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    transition: all .7s ease;
-    -webkit-transition: all .7s ease;
-    -moz-transition: all .7s ease;
-    -ms-transition: all .7s ease;
-    -o-transition: all .7s ease;
-}
-.hero-text a:hover{
-    background-color: #73b21a;
-    color: #fff
-}
-/* <!-- ===============================
-end hero section
-=============================== --> */
-/* <!-- ===============================
-garden  section start
-=============================== --> */
-.garden-row{
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.garden-row > * {
-   padding-right: 15px;
-   padding-left: 15px;
-   margin-bottom: 30px;
-}
-.garden-section a{
-    position: absolute;
-    left: 50%;
-    bottom: -18px;
-    transform: translateX(-50%);    
-}
-.garden-box{
-    transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
-    min-height: 250px;
-}
-.garden-box:hover{
-    background:#73b21a
-}
-
-
-/* <!-- ===============================
-garden  section end
-=============================== --> */
-
-
-
-
-
-
-
 /* =================
   Font Color
 ================= */
@@ -261,3 +124,309 @@ garden  section end
 .bg-color-40{
     background-color: #406E00;
 }
+.bg-color-f9{
+    background-color: #f9f9f9;
+}
+
+
+
+/* ======================
+  Reusable Component
+=====================*/
+.line-1, .line-2{
+    border: 0;
+    border-bottom: 2px solid #73b21a;
+    opacity: 1;
+    margin: auto;
+    
+
+    
+}
+.line-1{
+width: 120px;
+margin-bottom: 4px;
+}
+.line-2{
+    width: 75px;
+}
+.p-width{
+    max-width: 700px;
+}
+.btn-primary{
+    min-width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background: #73b21a;
+    text-align: center;
+    border-radius: 30px;
+}
+.btn-primary:hover{
+    background: #4b7017;
+}
+.transition-linear{
+    transition: all .5s linear;
+   
+}
+.transition-ease{
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+/* <!-- ===============================
+start header section
+=============================== --> */
+
+.signin-signup li:last-child a{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.header-top{
+    padding: 6px 0;
+}
+.main-menu ul li:last-of-type a{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+
+}
+.main-menu ul li:not(:last-of-type) a:hover{
+    color: #73b21a;
+}
+/* <!-- ===============================
+End header section
+=============================== --> */
+
+
+/* <!-- ===============================
+start hero section
+=============================== --> */
+.hero-section{
+    background:linear-gradient(rgba(51, 57, 69, 0.7), rgba(96,131,48,0.7)),  url(/assets/images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-text a{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+}
+.hero-text a:hover{
+    background-color: #73b21a;
+    color: #fff
+}
+/* <!-- ===============================
+end hero section
+=============================== --> */
+/* <!-- ===============================
+garden  section start
+=============================== --> */
+.garden-row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.garden-row > * {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-bottom: 30px;
+}
+.garden-section a{
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    transform: translateX(-50%);    
+}
+/* .garden-box{
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    min-height: 250px;
+} */
+.garden-box:hover{
+    background:#73b21a
+}
+/* <!-- ===============================
+start landscaping section
+=============================== --> */
+.land-section{
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),  url(/assets/images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.open-video .play-btn{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.land-content p{
+margin-top: 23px;
+}
+.land-content a{
+    background-color: #73b21a;
+}
+
+
+
+
+
+/* <!-- ===============================
+start of service section
+=============================== --> */
+/* .service-section{
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),  url(/assets/images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+.service-box{
+    padding: 28px 13px;
+}
+.service-title h2{
+    margin-bottom: 7px;
+}
+.service-box:hover{
+    background-color: #73b21a;
+    color: #fff;
+}
+.service-box .service-icon span{
+    width: 56px;
+    height: 56px
+}
+.service-box:hover .service-desc hr{
+    border-color: #fff;
+}
+
+.service-desc hr{
+    opacity: 1;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px dashed #73b21a;
+    margin: 3px 0 8px;
+}
+
+.service-box:hover .service-icon span{
+    background: #fff;
+    color: #73b21a;
+}
+.service-box:hover .service-icon span i{
+    color: #73b21a;
+}
+.service-box:hover .service-desc p{
+    color: #fff
+}
+
+/* <!-- ===============================
+service  section end
+=============================== --> */
+/* <!-- ===============================
+start of counter section
+=============================== --> */
+.couneter-section{
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),  url(/assets/images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.counter-img{
+    width:68px;
+    height: 68px;
+    border: 2px solid #fff;
+    margin-bottom: 2px;
+}
+.counter-img:hover{
+    background:#406E00;
+    border-color: transparent;
+
+}
+.counter-item p:last-of-type{
+   margin-top: -7px;
+}
+
+
+
+
+/* <!-- ===============================
+counter  section end
+=============================== --> */
+
+
+/* <!-- ===============================
+starting of team section
+=============================== --> */
+.team-title h2{
+margin-bottom: 7px;
+}
+.team-img{
+    overflow: hidden;
+}
+.social-link{
+    padding: 7px;
+    position: absolute;
+    left: 0;
+    bottom: -42px;
+    width: 100%;
+    transition: .5s ease;;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+    z-index: 111;
+}
+.team-content:hover .social-link{
+    bottom: 0;
+}
+.team-content:hover .overlay{
+    bottom: 0;
+}
+.team-name{
+    padding: 9px 0 }
+.team-name p:last-child{
+    margin-top: -4px;
+}
+.overlay{
+    position:absolute;
+    height: 100%;
+    width:100%;
+    left: 0;
+    bottom: -100%;
+    background: linear-gradient(rgba(115,178,26,0.5),rgba(51,51,51,0.5));
+    z-index: 11;
+}
+/* <!-- ===============================
+team  section end
+=============================== --> */
+
+
+/* <!-- ===============================
+starting of landscaping section
+=============================== --> */
+
+
+/* <!-- ===============================
+garden  section end
+=============================== --> */
+
+
+
+
+
+
