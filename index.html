@@ -26,12 +26,12 @@
     <!-- ===============================
     start header
     =============================== -->
-    <header>
+    <header class="position-relative">
         <div class="header-top bg-color-73">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <ul class="contact-info">
+                    <div class="col-xl-6 d-none d-md-block">
+                        <ul class="contact-info text-center text-xl-start">
                             <li class="d-inline-block me-30"><a class="font-size-14 text-color-ff"
                                     href="tel:01784124267"><span class="me-05"><i
                                             class="fas fa-headphones"></i></span><span>01784
@@ -44,8 +44,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-6 ">
-                        <ul class="signin-signup text-end">
+                    <div class="col-xl-6 mt-md-3 m-xl-0">
+                        <ul class="signin-signup text-center text-xl-end">
                             <li class="d-inline-block me-30 text-color-ff">
                                 <a class="text-color-ff font-size-14" href="#">Login</a>
                                 <span class="text-color-ff font-size-14">/</span>
@@ -63,35 +63,51 @@
                 </div>
             </div>
         </div>
-        <nav class="bg-color-ff shadow py-45">
-            <div class="container d-flex justify-content-between">
+        <nav class="bg-color-ff shadow py-45 header-sticky">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- site logo -->
                 <div class="logo">
                     <a href="index.html">
                         <img src="/assets/images/site-logo.png" alt="">
                     </a>
                 </div>
+                <!-- menu toggle button -->
+                <div class="d-block d-lg-none menu-toggle-btn" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+
                 <!-- main menu -->
-                <div class="main-menu">
-                    <ul class="text-end">
-                        <li class="me-40 d-inline-block"><a href="#"
+                <div class="main-menu d-flex justify-content-center align-items-center">
+                    <ul class="text-center text-lg-end">
+                        <li class="me-40 d-lg-inline-block"><a href="#"
                                 class="font-m-600 font-size-14 text-color-33">Home</a></li>
-                        <li class="me-40 d-inline-block"><a href="#"
+                        <li class="me-40 d-lg-inline-block"><a href="#"
                                 class="font-m-600 font-size-14 text-color-33">About</a></li>
-                        <li class="me-40 d-inline-block"><a href="#"
+                        <li class="me-40 d-lg-inline-block"><a href="#"
                                 class="font-m-600 font-size-14 text-color-33">Service</a></li>
-                        <li class="me-40 d-inline-block"><a href="#"
+                        <li class="me-40 d-lg-inline-block"><a href="#"
                                 class="font-m-600 font-size-14 text-color-33">Pricing</a></li>
-                        <li class="me-40 d-inline-block"><a href="#"
+                        <li class="me-40 d-lg-inline-block"><a href="#"
                                 class="font-m-600 font-size-14 text-color-33">Shop</a></li>
-                        <li class="me-40 d-inline-block"><a href="#"
+                        <li class="me-40 d-lg-inline-block"><a href="#"
                                 class="font-m-600 font-size-14 text-color-33">Pages</a></li>
-                        <li class="me-40 d-inline-block"><a href="#"
+                        <li class="me-40 d-lg-inline-block"><a href="#"
                                 class="font-m-600 font-size-14 text-color-33">Blog</a></li>
-                        <li class="me-40 d-inline-block"><a href="#"
+                        <li class="me-40 d-lg-inline-block"><a href="#"
                                 class="font-m-600 font-size-14 text-color-33">Contact</a></li>
-                        <li class="d-inline-block"><a href="#"
+                        <!-- search box -->
+
+                        <li class="d-lg-inline-block position-relative"><a href="#"
                                 class="bg-color-73 rounded-circle text-center text-color-ff"><i
-                                    class="fas fa-search"></i></a></li>
+                                    class="fas fa-search"></i></a>
+                            <form action="#" class="search bg-color-ff p-4">
+                                <input type="text" name="search-box" id="" placeholder="Search There">
+                                <button type="submit">Search</button>
+                            </form>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -265,7 +281,7 @@
                         adipisicing elit. Quisquam aut hic nemo, molestias facilis qui deleniti obcaecati. Possimus,
                         eos. Magnam veritatis eveniet ipsam quia recusandae.</p>
                 </div>
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-lg-4">
                         <div class="service-box bg-color-f9 d-flex align-items-center">
                             <div class="service-icon me-10">
@@ -369,7 +385,7 @@
     =============================== -->
         <section class="couneter-section pt-95 pb-95">
             <div class="container">
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-md-3">
                         <div class="counter-item text-center">
                             <div
@@ -695,119 +711,247 @@
     =============================== -->
 
 
-    <!-- ===============================
+        <!-- ===============================
     starting of slider  section
     =============================== -->
-    <section class="latest-news py-100">
-       <div class="container">
-        <div class="news-title text-center mb-45">
-            <h2 class="font-size-35 text-color-33 font-m-700 mb-10 fst-italic">Latest News</h2>
-            <hr class="line-1">
-            <hr class="line-2">
-            <p class="font-size-15 text-color-66 p-width mx-auto mt-15">Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam aut hic nemo, molestias facilis qui deleniti obcaecati. Possimus,
-                eos. Magnam veritatis eveniet ipsam quia recusandae.</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="news-content border">
-                    <div class="news-img position-relative">
-                        <img width="100%" src="/assets/images/news1.jpg" alt="news1" class="img-fluid">
-                        <div class="news-overlay overlay-2 transition-linear"></div>
-                        <div class="month bg-color-73 text-center py-05">
-                            <p class="text-color-ff font-size-14">12th November</p>
+        <section class="latest-news py-100">
+            <div class="container">
+                <div class="news-title text-center mb-45">
+                    <h2 class="font-size-35 text-color-33 font-m-700 mb-10 fst-italic">Latest News</h2>
+                    <hr class="line-1">
+                    <hr class="line-2">
+                    <p class="font-size-15 text-color-66 p-width mx-auto mt-15">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quisquam aut hic nemo, molestias facilis qui deleniti obcaecati. Possimus,
+                        eos. Magnam veritatis eveniet ipsam quia recusandae.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="news-content border">
+                            <div class="news-img position-relative">
+                                <img width="100%" src="/assets/images/news1.jpg" alt="news1" class="img-fluid">
+                                <div class="news-overlay overlay-2 transition-linear"></div>
+                                <div class="month bg-color-73 text-center py-05 transition-linear">
+                                    <p class="text-color-ff font-size-14">12th November</p>
+                                </div>
+                            </div>
+                            <div class="news-desc px-15">
+                                <p class="font-size-20 font-m-500 text-color-33">Choose The Best Gardenhub</p>
+                                <p class="font-size-14 text-color-66">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Delectus fuga nobis possimus.</p>
+                            </div>
+                            <div class="news-link border-top d-flex justify-content-between align-items-center">
+                                <a href="#" class="font-size-14 text-color-66">
+                                    <span class="me-10">Read More</span>
+                                    <span class="news-icon"><i class="fas fa-angle-double-right"></i></span>
+                                </a>
+                                <p>
+                                    <span><i class="far fa-comment"></i></span>
+                                    <span class="font-size-14 text-color-66">20</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="news-desc px-15">
-                        <p class="font-size-20 font-m-500 text-color-33">Choose The Best Gardenhub</p>
-                        <p class="font-size-14 text-color-66">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus fuga nobis possimus.</p>
+                    <div class="col-lg-4">
+                        <div class="news-content border">
+                            <div class="news-img position-relative">
+                                <img width="100%" src="/assets/images/news2.jpg" alt="news1" class="img-fluid">
+                                <div class="news-overlay overlay-2 transition-linear"></div>
+                                <div class="month bg-color-73 text-center py-05 transition-linear">
+                                    <p class="text-color-ff font-size-14">12th November</p>
+                                </div>
+                            </div>
+                            <div class="news-desc px-15">
+                                <p class="font-size-20 font-m-500 text-color-33">Choose The Best Gardenhub</p>
+                                <p class="font-size-14 text-color-66">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Delectus fuga nobis possimus.</p>
+                            </div>
+                            <div class="news-link border-top d-flex justify-content-between align-items-center">
+                                <a href="#" class="font-size-14 text-color-66">
+                                    <span class="me-10">Read More</span>
+                                    <span class="news-icon transition-linear"><i
+                                            class="fas fa-angle-double-right"></i></span>
+                                </a>
+                                <p>
+                                    <span><i class="far fa-comment"></i></span>
+                                    <span class="font-size-14 text-color-66">20</span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="news-link border-top d-flex justify-content-between align-items-center">
-                        <a href="#" class="font-size-14 text-color-66">
-                            <span class="me-10">Read More</span>
-                            <span class="news-icon"><i class="fas fa-angle-double-right"></i></span>
-                        </a>
-                        <p>
-                           <span><i class="far fa-comment"></i></span>
-                            <span class="font-size-14 text-color-66">20</span>
-                        </p>
+                    <div class="col-lg-4">
+                        <div class="news-content border">
+                            <div class="news-img position-relative">
+                                <img width="100%" src="/assets/images/news3.jpg" alt="news1" class="img-fluid">
+                                <div class="news-overlay overlay-2 transition-linear"></div>
+                                <div class="month bg-color-73 text-center py-05 transition-linear">
+                                    <p class="text-color-ff font-size-14">12th November</p>
+                                </div>
+                            </div>
+                            <div class="news-desc px-15">
+                                <p class="font-size-20 font-m-500 text-color-33">Choose The Best Gardenhub</p>
+                                <p class="font-size-14 text-color-66">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Delectus fuga nobis possimus.</p>
+                            </div>
+                            <div class="news-link border-top d-flex justify-content-between align-items-center">
+                                <a href="#" class="font-size-14 text-color-66">
+                                    <span class="me-10">Read More</span>
+                                    <span class="news-icon transition-linear"><i
+                                            class="fas fa-angle-double-right"></i></span>
+                                </a>
+                                <p>
+                                    <span><i class="far fa-comment"></i></span>
+                                    <span class="font-size-14 text-color-66">20</span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="news-content border">
-                    <div class="news-img position-relative">
-                        <img width="100%" src="/assets/images/news2.jpg" alt="news1" class="img-fluid">
-                        <div class="news-overlay overlay-2 transition-linear"></div>
-                        <div class="month bg-color-73 text-center py-05 transition-linear">
-                            <p class="text-color-ff font-size-14">12th November</p>
-                        </div>
-                    </div>
-                    <div class="news-desc px-15">
-                        <p class="font-size-20 font-m-500 text-color-33">Choose The Best Gardenhub</p>
-                        <p class="font-size-14 text-color-66">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus fuga nobis possimus.</p>
-                    </div>
-                    <div class="news-link border-top d-flex justify-content-between align-items-center">
-                        <a href="#" class="font-size-14 text-color-66">
-                            <span class="me-10">Read More</span>
-                            <span class="news-icon transition-linear"><i class="fas fa-angle-double-right"></i></span>
-                        </a>
-                        <p>
-                           <span><i class="far fa-comment"></i></span>
-                            <span class="font-size-14 text-color-66">20</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="news-content border">
-                    <div class="news-img position-relative">
-                        <img width="100%" src="/assets/images/news3.jpg" alt="news1" class="img-fluid">
-                        <div class="news-overlay overlay-2 transition-linear"></div>
-                        <div class="month bg-color-73 text-center py-05">
-                            <p class="text-color-ff font-size-14">12th November</p>
-                        </div>
-                    </div>
-                    <div class="news-desc px-15">
-                        <p class="font-size-20 font-m-500 text-color-33">Choose The Best Gardenhub</p>
-                        <p class="font-size-14 text-color-66">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus fuga nobis possimus.</p>
-                    </div>
-                    <div class="news-link border-top d-flex justify-content-between align-items-center">
-                        <a href="#" class="font-size-14 text-color-66">
-                            <span class="me-10">Read More</span>
-                            <span class="news-icon transition-linear"><i class="fas fa-angle-double-right"></i></span>
-                        </a>
-                        <p>
-                           <span><i class="far fa-comment"></i></span>
-                            <span class="font-size-14 text-color-66">20</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>     
-       </div>
-    </section>
+        </section>
         <!-- ===============================
      end of slider section
      =============================== -->
     </main>
-      <!-- ===============================
+    <!-- ===============================
      starting of footer section
      =============================== -->
-     <footer>
-        <div class="footer-section">
+    <footer class="bg-color-15 pt-100 pb-40">
+        <div class="footer-section bg-color-15">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="footer-content">
-                            <img src="/assets/images/site-logo.png" alt="">
-                            <p class="font-size-15 text-color-dd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facilis molestias autem natus distinctio cumque, dignissimos hic dicta eligendi, modi minima repellat earum placeat corporis.</p>
+                            <img src="/assets/images/site-logo.png" alt="logo" class="img-fluid">
+                            <p class="font-size-15 text-color-ff my-25">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Obcaecati facilis molestias autem natus distinctio cumque, dignissimos
+                                hic dicta eligendi, modi minima repellat earum placeat corporis.Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Obcaecati facilis molestias autem natus distinctio
+                                cumque, dignissimos hic dicta eligendi, modi minima repellat earum placeat corporis.</p>
+                            <hr>
+                            <ul class="f-social-link mt-25">
+                                <li class="d-inline-block me-20">
+                                    <a class="text-color-ff font-size-20" href="#"><i
+                                            class="fab fa-facebook-f text-color-80"></i></a>
+                                </li>
+                                <li class="d-inline-block me-20">
+                                    <a class="text-color-ff font-size-16" href="#"><i
+                                            class="fab fa-twitter text-color-80"></i></a>
+                                </li>
+                                <li class="d-inline-block me-20">
+                                    <a class="text-color-ff font-size-16" href="#"><i
+                                            class="fab fa-skype text-color-80"></i></a>
+                                </li>
+                                <li class="d-inline-block">
+                                    <a class="text-color-ff font-size-16" href="#"><i
+                                            class="fas fa-share-alt text-color-80"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-content">
+                            <h3 class="font-size-24 font-m-500 text-color-ff mb-30">Useful Links</h3>
+                            <ul class="page-links">
+                                <li class="mb-05">
+                                    <a href="#" class="font-size-15 text-color-dd transition-ease"><i
+                                            class="fas fa-circle"></i><span class="ms-05">Home</span></a>
+                                </li>
+                                <li class="mb-05">
+                                    <a href="#" class="font-size-15 text-color-dd transition-ease"><i
+                                            class="fas fa-circle"></i><span class="ms-05">Our Team</span></a>
+                                </li>
+                                <li class="mb-05">
+                                    <a href="#" class="font-size-15 text-color-dd transition-ease"><i
+                                            class="fas fa-circle"></i><span class="ms-05">Projects</span></a>
+                                </li>
+                                <li class="mb-05">
+                                    <a href="#" class="font-size-15 text-color-dd transition-ease"><i
+                                            class="fas fa-circle"></i><span class="ms-05">Meet Our Blog</span></a>
+                                </li>
+                                <li class="mb-05">
+                                    <a href="#" class="font-size-15 text-color-dd transition-ease"><i
+                                            class="fas fa-circle"></i><span class="ms-05">Contact</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-content">
+                            <h3 class="font-size-24 text-color-ff mb-30">Recent Posts</h3>
+                            <div class="post-area d-flex align-items-center mb-20">
+                                <div class="post-img me-20">
+                                    <img src="/assets/images/post-1.jpg" alt="post">
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">
+                                        <p class="font-size-16 text-color-dd font-m-400">Reward Our People Taking</p>
+                                    </a>
+                                    <span class="font-size-13 text-color-dd font-os-600">May 14, 2018</span>
+                                </div>
+                            </div>
+                            <div class="post-area d-flex align-items-center">
+                                <div class="post-img me-20">
+                                    <img src="/assets/images/post-2.jpg" alt="post">
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">
+                                        <p class="font-size-16 text-color-dd font-m-400">Reward Our People Taking</p>
+                                    </a>
+                                    <span class="font-size-13 text-color-dd font-os-600">May 14, 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-content">
+                            <h3 class="font-size-24 text-color-dd font-m-500 mb-30">Opening Hours</h3>
+                            <div class="time mb-15 d-flex align-items-center justify-content-between">
+                                <p class="text-color-dd font-size-14">Thurs Day</p>
+                                <p class="text-color-dd font-size-14">24 Hours Shift</p>
+                            </div>
+                            <div class="time mb-15 d-flex align-items-center justify-content-between">
+                                <p class="text-color-dd font-size-14">Thurs Day</p>
+                                <p class="text-color-dd font-size-14">24 Hours Shift</p>
+                            </div>
+                            <div class="time mb-15 d-flex align-items-center justify-content-between">
+                                <p class="text-color-dd font-size-14">Thurs Day</p>
+                                <p class="text-color-dd font-size-14">24 Hours Shift</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <hr class="text-color-dd mt-80">
+                <div class="row mt-40">
+                    <div class="col-md-6">
+                        <div class="footer-bottom-section">
+                            <div class="copyright-text">
+                                <p class="text-color-dd font-size-14">
+                                    &copy; Umme Salma Ali 2021 All Rights Reserved
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="f-bottom-link">
+                            <ul class="text-end">
+                                <li class="d-inline-block me-15"><a href="#" class="text-color-dd font-size-14">Home</a>
+                                </li>
+                                <li class="d-inline-block me-15"><a href="#"
+                                        class="text-color-dd font-size-14">About</a></li>
+                                <li class="d-inline-block me-15"><a href="#"
+                                        class="text-color-dd font-size-14">Services</a></li>
+                                <li class="d-inline-block me-15"><a href="#"
+                                        class="text-color-dd font-size-14">Contact</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
         </div>
-     </footer>
+    </footer>
 
 
 
@@ -835,6 +979,9 @@
 
     <script src="/assets/js/main.js"></script>
     <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
         var mixer = mixitup(".mix-container");
 
         //    swiper

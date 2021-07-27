@@ -1,0 +1,68 @@
+/*
+=========================================
+Responsive Breakpoint
+=========================================
+*/
+@media (max-width: 1599px) {
+
+
+}
+
+@media (max-width: 1399.98px) {
+    
+
+
+}
+
+@media (max-width: 1199.98px) {
+/* ====================
+HeadER 
+==================== */
+
+
+
+
+
+}
+@media (max-width:1199.98px){
+
+    .main-menu ul li:not(:last-of-type){
+        margin-right: 30px;
+    } 
+	
+}
+
+@media (max-width: 991.98px) {
+    nav{
+        padding: 30px 0 !important;}
+
+    .main-menu {
+       border-top: 2px solid red;
+       position: fixed;
+       top: 0%;
+       left: -100%;
+       width: 50%;
+	   height: 100vh;
+	   height: 100%;
+       background: #73b21a;
+       padding: 30px;
+       transition:all .5s linear;
+       z-index: 999;
+	}
+
+    .main-menu ul li:not(:last-of-type){
+        margin: 10px 0;
+    }
+    .open-menu{
+        left: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+.main-menu{
+	width: 50%;
+}
+}
+@media (max-width: 575.98px) { 
+	
+}
