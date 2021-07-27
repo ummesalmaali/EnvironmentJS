@@ -275,17 +275,34 @@ start header section
     padding: 6px 0;
 }
 
-.main-menu ul li:last-of-type a {
+.main-menu ul li:last-of-type a,
+.mobile-menu-search-area a {
     width: 35px;
     height: 35px;
     line-height: 35px;
 }
 .search-box {
     position: absolute;
-    top: 100%;
+    top: 200%;
     right: 0;
-    border: 2px solid red;
-    min-width: 350px;
+    border: 2px solid #72b21a;
+    min-width: 330px;
+    visibility: hidden;
+    opacity: 0;
+}
+.search-box input {
+    background: #ecf0f1;
+}
+.search-box input,
+.search-box input::placeholder{
+    font-size: 16px;
+    font-family: 'Open Sans 400';
+    color: #151515;
+}
+.service-box-show{
+    visibility: visible;
+    opacity: 1;
+    top: 135%;
 }
 .main-menu ul li:not(:last-of-type) a:hover {
     color: #73b21a;

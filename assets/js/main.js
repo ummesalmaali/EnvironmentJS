@@ -14,6 +14,10 @@ $(document).ready(function($) {
 			$(".menu-toggle-btn").click(function(){
 				$(".main-menu").toggleClass("open-menu")
 			})
+			//service-box-show toggle show and hide
+			$(".open-search-box").click(function(){
+				$(".search-box").toggleClass("service-box-show")
+			})
     $('.counter').counterUp({
         delay: 10,
         time: 1000
