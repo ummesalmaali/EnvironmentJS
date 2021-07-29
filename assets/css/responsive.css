@@ -154,4 +154,8 @@ margin-right: 23px;
 	.list-content ul:first-child{
 		margin-right: 0;
 	}
+	.footer-bottom-section p{
+		font-size: 12px;
+
+	}
 }
