@@ -287,6 +287,7 @@ start header section
     right: 0;
     border: 2px solid #72b21a;
     min-width: 330px;
+    background: #ecf0f1;
     visibility: hidden;
     opacity: 0;
 }
@@ -389,6 +390,7 @@ start hero section
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
   
 }
 
@@ -407,6 +409,9 @@ start hero section
     -moz-transition: all .7s ease;
     -ms-transition: all .7s ease;
     -o-transition: all .7s ease;
+}
+.hero-text p{
+    max-width: 685px;
 }
 
 .hero-text a:hover {

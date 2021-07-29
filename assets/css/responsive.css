@@ -85,6 +85,10 @@ HeadER
 	.news-desc p:first-child {
 		font-size: 18px;
 	}
+	.useful-links{
+		margin-left: 40px;
+	}
+	
 }
 @media (max-width: 767.98px) {
 .main-menu{
@@ -112,6 +116,9 @@ HeadER
 .copyright-text{
 	margin-bottom: 20px;
 }
+.btn-area button:not(:last-child){
+margin-right: 23px;
+}
 }
 @media (max-width: 575.98px) { 
 	/* header section */
@@ -122,8 +129,29 @@ HeadER
 		min-width: 300px;
 		padding: 10px !important;
 	}
+	/* header section */
 	.hero-text h1{
 		font-size: 37px;
-		margin-bottom: 20px;
 }
+	.lnd-content p:first-child{
+	font-size: 18px;
+	}
+	.footer-content .useful-links{
+		margin:0;
+	}
+	
+}
+@media (max-width: 510px){
+	.list-content ul:first-child{
+		margin-right: 25px;
+	}
+
+}
+@media (max-width: 466.98px){
+	.list-content{
+		flex-direction: column;
+	}
+	.list-content ul:first-child{
+		margin-right: 0;
+	}
 }
